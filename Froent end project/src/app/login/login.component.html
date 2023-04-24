@@ -1,0 +1,54 @@
+<div class="col-md-6 offset-md-3">
+ 
+ <title>Login</title>
+
+<body>
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<form action="#">
+  <table>
+   <th colspan="2">Login</th>
+   <tr>
+    
+
+    <td><label class="form-label">Username</label></td>
+    
+    <td> 						
+        <div class="input-group mb-3">
+        <div class="input-group-append">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+        </div>
+            <input type="text" placeholder="name" name="username" [(ngModel)]="username"/>
+        </div>
+     </td>
+  
+
+</tr>
+  <tr>
+   <td><label>Password</label></td>
+   <td>						
+    <div class="input-group mb-2">
+    <div class="input-group-append">
+        <span class="input-group-text"><i class="fas fa-key"></i></span>
+        </div>
+      <input type="password" placeholder="password" name="password" [(ngModel)]="password"/>
+      </div>
+    </td>
+  </tr>
+
+ <tr>
+  <p id="'e">{{emessage}}</p>
+  <td colspan="2"><button (click)=checkLogin()>Sign in</button></td>
+ </tr>
+ </table>
+ <div class="col-md-6 offset-md-4">
+  <a href="registrationform" class="btn btn-primary">
+      Register
+  </a>
+  <a href="forgotpassword" class="btn btn-link">
+      Forgot Your Password?
+  </a>
+</div>
+</form>
+
