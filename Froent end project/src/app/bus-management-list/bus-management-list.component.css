@@ -1,0 +1,16 @@
+div{
+    background-image: url("C:\Users\User\Desktop\FullStackProject\BusManagement\src\assets\travel-bus-world-logo-design-travel-bus-logo-114010556.jpg");
+}
+tr:hover{
+background-color: antiquewhite;
+}
+thead{
+  background-color: black;  
+ color:aqua;   
+}
+tbody{
+    color:black;
+}
+h2{
+    background-color: blueviolet;
+}
