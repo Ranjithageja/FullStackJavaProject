@@ -52,7 +52,7 @@ public class BusManagementController {
 		try {
 			List<BusManagement> busList = new ArrayList<BusManagement>();
 			if(startingPoint !=null) {
-				busManagementRepository.findBystartingPoint(startingPoint).forEach(busList::add);
+				busManagementRepository.findBystartingPointContaining(startingPoint).forEach(busList::add);
 				return new ResponseEntity<>(busList,HttpStatus.OK);
 			}
 			else {
