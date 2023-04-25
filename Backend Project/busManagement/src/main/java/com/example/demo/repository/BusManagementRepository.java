@@ -18,7 +18,7 @@ import com.example.demo.model.BusManagement;
 
 @Repository
 public interface BusManagementRepository extends JpaRepository<BusManagement, Integer>{
-             List<BusManagement> findBystartingPoint(String startingPoint);
+             List<BusManagement> findBystartingPointContaining(String startingPoint);
              List<BusManagement> findBybusType(String busType);
 
 
